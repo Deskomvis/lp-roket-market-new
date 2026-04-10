@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jasa Desain Slide Produk Premium - Bikin Produk Lebih Meyakinkan & Siap Jual</title>
+<meta name="description" content="Ubah foto produk mentah menjadi slide visual yang membangun trust, menjelaskan benefit, dan membuat listing lebih siap jual. Untuk Shopee, Tokopedia, TikTok, Lazada, dan Amazon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#030712;
+--bg-card:rgba(17,24,39,0.7);
+--bg-card-hover:rgba(26,34,53,0.9);
+--green:#a3e635;
+--green-dark:#65a30d;
+--blue:#3b82f6;
+--purple:#a855f7;
+--text:#f8fafc;
+--text-muted:#94a3b8;
+--text-dim:#64748b;
+--border:rgba(255,255,255,0.08);
+--gradient-green:linear-gradient(135deg,#a3e635,#65a30d);
+--gradient-blue:linear-gradient(135deg,#3b82f6,#1d4ed8);
+--radius:16px;
+--radius-lg:24px;
+--shadow:0 10px 40px rgba(0,0,0,0.5);
+--glass:blur(12px) saturate(180%);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+font-family:'Inter',system-ui,-apple-system,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
+overflow-x:hidden;
+-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ===== HERO ===== */
+.hero{
+padding:100px 0 80px;
+position:relative;
+overflow:hidden;
+}
+.hero::before{
+content:'';
+position:absolute;
+top:-200px;right:-200px;
+width:600px;height:600px;
+background:radial-gradient(circle,rgba(163,230,53,.08),transparent 70%);
+pointer-events:none;
+}
+.hero .container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+}
+.hero-content{flex:1;max-width:600px}
+.hero-content h1{
+font-size:clamp(32px,5vw,48px);
+font-weight:800;
+line-height:1.1;
+margin-bottom:24px;
+letter-spacing:-.03em;
+}
+.hero-content h1 .highlight{
+color:var(--green);
+display:inline;
+}
+.hero-content p{
+color:var(--text-muted);
+font-size:16px;
+margin-bottom:40px;
+max-width:540px;
+line-height:1.7;
+}
+.hero-buttons{display:flex;gap:16px;flex-wrap:wrap}
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:16px 32px;
+border-radius:10px;
+font-weight:700;
+font-size:16px;
+cursor:pointer;
+border:none;
+transition:all .25s cubic-bezier(.4,0,.2,1);
+font-family:inherit;
+}
+.btn-green{
+background:var(--gradient-green);
+color:#0a0e1a;
+}
+.btn-green:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(163,230,53,.3)}
+.btn-outline{
+background:transparent;
+color:var(--text);
+border:1px solid var(--border);
+}
+.btn-outline:hover{background:rgba(255,255,255,.05);border-color:var(--text-muted)}
+.hero-image{
+flex:0 0 auto;
+max-width:440px;
+position:relative;
+}
+.hero-image img{
+width:100%;
+filter:drop-shadow(0 20px 50px rgba(0,0,0,.5));
+}
+
+/* ===== SECTION SHARED ===== */
+.section{padding:100px 0}
+.section-title{
+text-align:center;
+font-size:clamp(24px,4vw,42px);
+font-weight:800;
+margin-bottom:16px;
+letter-spacing:-.02em;
+}
+.section-subtitle{
+text-align:center;
+color:var(--text-muted);
+font-size:16px;
+max-width:700px;
+margin:0 auto 60px;
+line-height:1.7;
+}
+
+/* ===== SECTION SHARED ===== */
+.section{padding:100px 0}
+/* ===== FEATURES ===== */
+.features-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+margin-top:20px;
+}
+.feature-card{
+background:var(--bg-card);
+backdrop-filter:var(--glass);
+-webkit-backdrop-filter:var(--glass);
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:40px 24px;
+text-align:center;
+transition:all .4s cubic-bezier(.4,0,.2,1);
+}
+.feature-card:hover{
+transform:translateY(-10px) scale(1.02);
+border-color:rgba(163,230,53,0.3);
+background:var(--bg-card-hover);
+box-shadow:var(--shadow);
+}
+.feature-icon{
+width:56px;height:56px;
+background:rgba(163,230,53,0.1);
+color:var(--green);
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px;
+}
+.feature-icon svg{width:28px;height:28px}
+.feature-card h3{margin-bottom:12px;font-size:18px;font-weight:700}
+.feature-card p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+/* ===== BEFORE AFTER SECTION ===== */
+.ba-section{
+padding:100px 0;
+background:linear-gradient(180deg,#0a0e1a 0%,#0d1225 100%);
+}
+.ba-container{
+max-width:1100px;
+margin:0 auto;
+display:flex;
+gap:24px;
+align-items:flex-start;
+border:none;
+box-shadow:none;
+background:transparent;
+}
+.ba-col{
+flex:1;
+position:relative;
+border-radius:var(--radius-lg);
+overflow:hidden;
+border:1px solid var(--border);
+box-shadow:var(--shadow);
+background:var(--bg-card);
+}
+.ba-col img{
+width:100%;
+display:block;
+height:auto;
+}
+.ba-label{
+position:absolute;
+top:20px;left:20px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:var(--glass);
+-webkit-backdrop-filter:var(--glass);
+border:1px solid rgba(255,255,255,0.2);
+color:#000;
+font-weight:700;
+font-size:14px;
+padding:6px 16px;
+border-radius:24px;
+z-index:2;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+.ba-label.after{
+background:var(--green);
+color:#0a0e1a;
+border-color:var(--green-dark);
+}
+
+/* ===== WORKFLOW ===== */
+.workflow-steps{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:24px;
+margin-top:20px;
+}
+.step-card{
+background:rgba(163,230,53,.03);
+border:1px dashed rgba(163,230,53,.2);
+border-radius:var(--radius-lg);
+padding:40px 24px;
+text-align:center;
+position:relative;
+}
+.step-number{
+position:absolute;
+top:-15px;left:50%;
+transform:translateX(-50%);
+background:var(--green);
+color:var(--bg);
+font-weight:900;
+font-size:14px;
+padding:4px 12px;
+border-radius:20px;
+}
+.step-card h3{margin-bottom:12px;font-size:18px}
+.step-card p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+/* ===== TESTIMONIALS ===== */
+/* ===== TESTIMONIALS (MARQUEE) ===== */
+.testimonial-section{background:#030712;overflow:hidden;padding:100px 0}
+.testimonial-marquee{
+position:relative;
+display:flex;
+overflow:hidden;
+user-select:none;
+gap:24px;
+padding:40px 0;
+}
+.testimonial-marquee:hover .testimonial-slide-track{animation-play-state:paused}
+.testimonial-slide-track{
+display:flex;
+gap:24px;
+animation:marquee-testimonial 40s linear infinite;
+min-width:max-content;
+}
+.testimonial-slide{
+width:300px;
+flex-shrink:0;
+border-radius:var(--radius);
+overflow:hidden;
+border:1px solid var(--border);
+background:var(--bg-card);
+backdrop-filter:var(--glass);
+transition:transform .3s ease;
+}
+.testimonial-slide:hover{transform:scale(1.05);z-index:2;border-color:var(--green)}
+.testimonial-slide img{width:100%;height:auto;display:block}
+
+@keyframes marquee-testimonial{
+0%{transform:translateX(0)}
+100%{transform:translateX(calc(-50% - 12px))}
+}
+
+/* ===== PACKAGE / PRICING ===== */
+/* ===== PACKAGE / PRICING ===== */
+.package-section{background:linear-gradient(180deg,#030712 0%,#090d1a 100%)}
+.package-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:32px;
+margin:48px auto 0;
+max-width:1050px;
+}
+.price-card{
+background:var(--bg-card);
+backdrop-filter:var(--glass);
+border:1px solid var(--border);
+border-radius:var(--radius-lg);
+padding:48px 32px;
+text-align:center;
+position:relative;
+transition:all .4s cubic-bezier(.4,0,.2,1);
+display:flex;
+flex-direction:column;
+}
+.price-card:hover{
+transform:translateY(-12px);
+border-color:var(--green);
+box-shadow:0 20px 60px rgba(163,230,53,0.1);
+}
+.price-card.featured{
+border-color:var(--green);
+background:rgba(163,230,53,0.05);
+box-shadow:0 15px 40px rgba(163,230,53,0.15);
+}
+.best-seller-badge{
+position:absolute;
+top:-15px;right:20px;
+background:var(--gradient-blue);
+color:#fff;
+font-size:12px;
+font-weight:800;
+padding:6px 16px;
+border-radius:20px;
+box-shadow:0 4px 15px rgba(59,130,246,.4);
+}
+.price-anchor{
+text-decoration:line-through;
+color:var(--text-dim);
+font-size:18px;
+margin-bottom:4px;
+display:block;
+}
+.price-main{
+display:block;
+font-size:42px;
+font-weight:900;
+color:var(--green);
+margin-bottom:8px;
+}
+.price-sub{font-size:16px;color:var(--text-muted);font-weight:600;margin-bottom:24px;display:block}
+.price-unit{font-size:13px;color:var(--text-dim);margin-bottom:8px;display:block}
+.savings-badge{
+background:rgba(163,230,53,0.1);
+color:var(--green);
+font-size:12px;
+font-weight:700;
+padding:4px 12px;
+border-radius:20px;
+display:inline-block;
+margin-bottom:24px;
+}
+.price-desc{
+font-size:14px;
+color:var(--text-muted);
+margin-bottom:32px;
+line-height:1.5;
+}
+.summary-bar{
+background:rgba(255,255,255,0.03);
+border:1px solid var(--border);
+border-radius:var(--radius-lg);
+padding:30px;
+margin-top:60px;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+gap:30px;
+text-align:center;
+}
+.summary-item{flex:1;min-width:150px}
+.summary-item strong{display:block;font-size:24px;color:var(--text);margin-bottom:4px}
+.summary-item span{font-size:13px;color:var(--text-muted)}
+
+/* ===== FAQ ===== */
+.faq-section{background:#0a0e1a}
+.faq-grid{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.faq-item{
+background:var(--bg-card);
+border:1px solid var(--border);
+border-radius:var(--radius);
+overflow:hidden;
+}
+.faq-question{
+padding:24px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:space-between;
+font-weight:600;
+transition:all .3s ease;
+}
+.faq-question:hover{background:var(--bg-card-hover)}
+.faq-answer{
+padding:0 24px;
+max-height:0;
+overflow:hidden;
+transition:all .3s cubic-bezier(0,1,0,1);
+color:var(--text-muted);
+font-size:14px;
+line-height:1.7;
+}
+.faq-item.active .faq-answer{max-height:500px;padding-bottom:24px;transition:all .3s cubic-bezier(1,0,1,0)}
+.faq-icon{transition:transform .3s ease}
+.faq-item.active .faq-icon{transform:rotate(180deg)}
+
+/* ===== PORTFOLIO ===== */
+.portfolio-section{
+background:#0d1225;
+overflow:hidden;
+}
+.portfolio-section .section-title .highlight{color:var(--green)}
+
+/* Infinite Marquee Wrapper */
+.portfolio-marquee{
+position:relative;
+width:100vw;
+margin-left:calc(-50vw + 50%);
+overflow:hidden;
+padding:20px 0;
+}
+/* Gradient shadow overlays */
+.portfolio-marquee::before,
+.portfolio-marquee::after{
+content:'';
+position:absolute;
+top:0;bottom:0;
+width:120px;
+z-index:2;
+pointer-events:none;
+}
+.portfolio-marquee::before{
+left:0;
+background:linear-gradient(90deg,#0d1225 0%,rgba(13,18,37,.85) 40%,transparent 100%);
+}
+.portfolio-marquee::after{
+right:0;
+background:linear-gradient(270deg,#0d1225 0%,rgba(13,18,37,.85) 40%,transparent 100%);
+}
+
+/* Scroll track */
+.portfolio-track{
+display:flex;
+gap:24px;
+width:max-content;
+animation:marquee-scroll 30s linear infinite;
+}
+.portfolio-marquee:hover .portfolio-track{
+animation-play-state:paused;
+}
+@keyframes marquee-scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* Portfolio cards */
+.portfolio-item{
+flex:0 0 auto;
+width:260px;
+height:480px;
+border-radius:var(--radius-lg);
+overflow:hidden;
+position:relative;
+background:var(--bg-card);
+border:1px solid var(--border);
+transition:all .4s cubic-bezier(.4,0,.2,1);
+cursor:pointer;
+}
+.portfolio-item:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:
+  0 20px 60px rgba(163,230,53,.08),
+  0 8px 30px rgba(0,0,0,.5);
+border-color:rgba(163,230,53,.25);
+}
+/* Bottom gradient on each card */
+.portfolio-item::after{
+content:'';
+position:absolute;
+bottom:0;left:0;right:0;
+height:100px;
+background:linear-gradient(to top,rgba(13,18,37,.7),transparent);
+pointer-events:none;
+transition:opacity .3s ease;
+}
+.portfolio-item:hover::after{opacity:.4}
+
+.portfolio-item img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:top;
+image-rendering:-webkit-optimize-contrast;
+image-rendering:crisp-edges;
+-webkit-backface-visibility:hidden;
+backface-visibility:hidden;
+transform:translateZ(0);
+}
+
+/* ===== TRANSFORM ===== */
+.transform-section{
+background:var(--bg);
+}
+.transform-content{
+display:flex;
+align-items:center;
+gap:60px;
+max-width:900px;
+margin:0 auto;
+}
+.transform-carousel{
+flex:0 0 320px;
+position:relative;
+}
+.carousel-wrapper{
+position:relative;
+width:280px;
+height:360px;
+margin:0 auto;
+perspective:1000px;
+}
+.carousel-slide{
+position:absolute;
+top:50%;left:50%;
+transform:translate(-50%,-50%);
+width:240px;
+height:320px;
+border-radius:var(--radius-lg);
+overflow:hidden;
+background:var(--bg-card);
+border:1px solid var(--border);
+transition:all .5s cubic-bezier(.4,0,.2,1);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.carousel-slide img{
+max-width:85%;
+max-height:85%;
+object-fit:contain;
+filter:drop-shadow(0 10px 20px rgba(0,0,0,.3));
+}
+.carousel-slide.active{z-index:3;opacity:1;transform:translate(-50%,-50%) scale(1)}
+.carousel-slide.prev{z-index:2;opacity:.6;transform:translate(-90%,-50%) scale(.85) rotateY(8deg)}
+.carousel-slide.next{z-index:2;opacity:.6;transform:translate(-10%,-50%) scale(.85) rotateY(-8deg)}
+.carousel-slide.hidden{z-index:1;opacity:0;transform:translate(-50%,-50%) scale(.7)}
+.carousel-nav{
+display:flex;
+justify-content:center;
+gap:24px;
+margin-top:20px;
+}
+.carousel-btn{
+width:40px;height:40px;
+border-radius:50%;
+background:rgba(255,255,255,.06);
+border:1px solid var(--border);
+color:var(--text);
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+transition:all .25s ease;
+font-size:18px;
+}
+.carousel-btn:hover{background:rgba(163,230,53,.15);border-color:var(--green)}
+.transform-text h2{
+font-size:clamp(24px,3vw,36px);
+font-weight:800;
+line-height:1.2;
+margin-bottom:28px;
+}
+.transform-text h2 .highlight{
+color:var(--bg);
+background:var(--green);
+padding:2px 10px;
+border-radius:6px;
+display:inline-block;
+}
+.transform-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.transform-list li{
+display:flex;
+align-items:flex-start;
+gap:12px;
+font-size:14px;
+color:var(--text-muted);
+line-height:1.6;
+}
+.transform-list li .check{
+flex-shrink:0;
+width:22px;height:22px;
+border-radius:50%;
+background:rgba(163,230,53,.15);
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:1px;
+}
+.transform-list li .check svg{width:12px;height:12px;color:var(--green)}
+
+/* ===== VIDEO SECTION ===== */
+.video-section{
+background:linear-gradient(180deg,var(--bg) 0%,#0d1225 100%);
+}
+.video-content{
+display:flex;
+align-items:center;
+gap:60px;
+max-width:900px;
+margin:0 auto;
+}
+.video-text{flex:1}
+.video-text h2{
+font-size:clamp(24px,3vw,36px);
+font-weight:800;
+line-height:1.2;
+margin-bottom:24px;
+}
+.video-text h2 .highlight{
+color:var(--green);
+text-decoration:underline;
+text-decoration-color:var(--green);
+text-underline-offset:4px;
+}
+.video-text .flow-label{
+font-size:13px;
+color:var(--text-dim);
+margin-bottom:16px;
+font-weight:500;
+letter-spacing:.5px;
+text-transform:uppercase;
+}
+.video-text ul{
+list-style:none;
+display:flex;
+flex-direction:column;
+gap:8px;
+margin-bottom:24px;
+}
+.video-text ul li{
+font-size:14px;
+color:var(--text-muted);
+padding-left:20px;
+position:relative;
+line-height:1.6;
+}
+.video-text ul li::before{
+content:'›';
+position:absolute;
+left:0;
+color:var(--green);
+font-weight:700;
+font-size:16px;
+}
+.video-text .conclusion{
+font-size:13px;
+color:var(--text-dim);
+line-height:1.7;
+border-top:1px solid var(--border);
+padding-top:16px;
+margin-top:8px;
+}
+.video-icon{
+flex:0 0 280px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.video-icon img{
+width:260px;
+filter:drop-shadow(0 20px 40px rgba(168,85,247,.3));
+transition:transform .3s ease;
+}
+.video-icon:hover img{transform:scale(1.05)}
+
+
+
+/* ===== CTA SECTION ===== */
+.cta-section{
+background:var(--bg);
+padding:80px 0 100px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+.cta-section::before{
+content:'';
+position:absolute;
+bottom:-100px;left:50%;
+transform:translateX(-50%);
+width:600px;height:300px;
+background:radial-gradient(ellipse,rgba(163,230,53,.06),transparent 70%);
+pointer-events:none;
+}
+.cta-section h2{
+font-size:clamp(24px,3vw,36px);
+font-weight:800;
+margin-bottom:16px;
+}
+.cta-section p{
+color:var(--text-muted);
+font-size:15px;
+margin-bottom:36px;
+max-width:500px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.7;
+}
+.cta-section .btn{padding:16px 40px;font-size:16px}
+
+/* ===== FOOTER ===== */
+.footer{
+background:#080c16;
+padding:32px 0;
+text-align:center;
+border-top:1px solid var(--border);
+}
+.footer p{
+font-size:13px;
+color:var(--text-dim);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.05);filter:brightness(1.5)}
+}
+.fade-up{
+opacity:0;
+transform:translateY(30px);
+transition:all .6s cubic-bezier(.4,0,.2,1);
+}
+.fade-up.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+.features-grid{grid-template-columns:repeat(2,1fr)}
+.portfolio-item{width:220px;height:400px}
+}
+@media(max-width:768px){
+.hero .container{flex-direction:column;text-align:center}
+.hero-content{max-width:100%}
+.hero-content p{margin-left:auto;margin-right:auto}
+.hero-buttons{justify-content:center}
+.hero-image{max-width:300px;margin:0 auto}
+.section{padding:80px 0}
+.features-grid{grid-template-columns:repeat(2,1fr);gap:16px}
+.feature-card{padding:32px 20px}
+.package-grid{grid-template-columns:1fr;gap:24px;max-width:400px}
+.price-card{padding:32px 24px}
+.portfolio-item{width:180px;height:340px}
+.testimonial-slide{width:260px}
+.ba-container{flex-direction:column;gap:32px}
+}
+@media(max-width:480px){
+.features-grid{grid-template-columns:1fr}
+.hero{padding:60px 0 40px}
+.section{padding:60px 0}
+.price-card{padding:32px 20px}
+.btn{padding:14px 20px;font-size:15px;width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+<div class="container">
+<div class="hero-content fade-up">
+<h1>Desain Slide Produk Premium yang Membuat Produk Anda <span class="highlight">Lebih Meyakinkan</span></h1>
+<p>Untuk desain detail brand lokal di Shopee Mall, Tokopedia, TikTok Shop, Lazada, Website, hingga Amazon. Kami bantu produk Anda terlihat lebih premium, lebih jelas, dan lebih mudah di-closing.</p>
+<div class="hero-buttons">
+<a href="https://wa.me/6285169153878?text=Kirim%20link%20produk%20dan%20target%20platform%20Anda.%20Kami%20bantu%20pilih%20paket%20yang%20paling%20pas." class="btn btn-green" id="cta-konsultasi">💬 Konsultasi Gratis</a>
+<a href="#portfolio" class="btn btn-outline">Lihat Portofolio</a>
+</div>
+</div>
+<div class="hero-image fade-up">
+<img src="assets/images/hero-mockups.webp" alt="Professional PDP Design Mockups" width="700" height="555" fetchpriority="high">
+</div>
+</div>
+</section>
+
+<!-- ===== BEFORE AFTER ===== -->
+<section class="section ba-section" id="comparison">
+<div class="container">
+<h2 class="section-title fade-up">Perbandingan <span class="highlight">Before vs After</span></h2>
+<p class="section-subtitle fade-up">Kami mengubah foto mentah yang "biasa" menjadi slide visual yang membangun trust dan menjelaskan benefit secara instan.</p>
+<div class="ba-container fade-up">
+<div class="ba-col">
+<div class="ba-label">Before</div>
+<img src="assets/images/carukesi-before.jpeg" alt="Foto Mentah Produk" loading="lazy">
+</div>
+<div class="ba-col">
+<div class="ba-label after">After</div>
+<img src="assets/images/portofolio-3.webp" alt="Desain Visual Listing Premium" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="section why-section" id="benefits">
+<div class="container">
+<h2 class="section-title fade-up">Kenapa Visual Listing <span class="highlight">Sangat Penting?</span></h2>
+<p class="section-subtitle fade-up">Di dunia marketplace, mata pembeli adalah hakimnya. Kami memastikan produk Anda menang di detik pertama.</p>
+<div class="features-grid fade-up">
+<div class="feature-card stagger-item">
+<div class="feature-icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+</div>
+<h3>Cepat Paham</h3>
+<p>Menjelaskan fitur rumit menjadi visual yang mudah dicerna dalam hitungan detik.</p>
+</div>
+<div class="feature-card stagger-item">
+<div class="feature-icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+</div>
+<h3>Bangun Trust</h3>
+<p>Tampilan profesional secara psikologis membuat buyer lebih berani klik "Beli Sekarang".</p>
+</div>
+<div class="feature-card stagger-item">
+<div class="feature-icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+</div>
+<h3>Kurangi Chat</h3>
+<p>Visual yang detail menjawab pertanyaan umum sebelum buyer sempat mengetik di chat.</p>
+</div>
+<div class="feature-card stagger-item">
+<div class="feature-icon">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+</div>
+<h3>HD 2K Quality</h3>
+<p>Hasil tajam maksimal untuk platform mobile, web, hingga cetak (print offset).</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="section portfolio-section" id="portfolio">
+<div class="container">
+<h2 class="section-title fade-up"><span class="highlight">Portofolio Kami</span></h2>
+<p class="section-subtitle fade-up">Dari UMKM, jasa, fashion, hingga edukasi — semua didesain custom sesuai kebutuhan.</p>
+</div>
+<div class="portfolio-marquee fade-up">
+<div class="portfolio-track">
+<!-- Set 1 -->
+<div class="portfolio-item">
+<img src="assets/images/portofolio-1.webp" alt="Portofolio Desain PDP 1" loading="lazy">
+</div>
+<div class="portfolio-item">
+<img src="assets/images/portofolio-2.webp" alt="Portofolio Desain PDP 2" loading="lazy">
+</div>
+<div class="portfolio-item">
+<img src="assets/images/portofolio-3.webp" alt="Portofolio Desain PDP 3" loading="lazy">
+</div>
+<div class="portfolio-item">
+<img src="assets/images/portofolio-4.webp" alt="Portofolio Desain PDP 4" loading="lazy">
+</div>
+<div class="portfolio-item">
+<img src="assets/images/portofolio-5.webp" alt="Portofolio Desain PDP 5" loading="lazy">
+</div>
+<div class="portfolio-item">
+<img src="assets/images/portofolio-6.webp" alt="Portofolio Desain PDP 6" loading="lazy">
+</div>
+<!-- Set 2 (duplicate for seamless infinite loop) -->
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-1.webp" alt="" loading="lazy">
+</div>
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-2.webp" alt="" loading="lazy">
+</div>
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-3.webp" alt="" loading="lazy">
+</div>
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-4.webp" alt="" loading="lazy">
+</div>
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-5.webp" alt="" loading="lazy">
+</div>
+<div class="portfolio-item" aria-hidden="true">
+<img src="assets/images/portofolio-6.webp" alt="" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WORKFLOW ===== -->
+<section class="section workflow-section" id="workflow">
+<div class="container">
+<h2 class="section-title fade-up">Proses Kerja <span class="highlight">Simpel & Cepat</span></h2>
+<p class="section-subtitle fade-up">Kami menghargai waktu Anda. Hanya 4 langkah mudah untuk mendapatkan visual listing profesional.</p>
+<div class="workflow-steps fade-up">
+<div class="step-card stagger-item">
+<div class="step-number">01</div>
+<h3>Briefing</h3>
+<p>Kirim gambar mentah dan info detail produk Anda.</p>
+</div>
+<div class="step-card stagger-item">
+<div class="step-number">02</div>
+<h3>Produksi</h3>
+<p>Tim kami mulai menyusun visual & copywriting strategis.</p>
+</div>
+<div class="step-card stagger-item">
+<div class="step-number">03</div>
+<h3>Preview</h3>
+<p>Anda melihat hasil desain & memberikan feedback.</p>
+</div>
+<div class="step-card stagger-item">
+<div class="step-number">04</div>
+<h3>Delivery</h3>
+<p>File final HD 2K dikirim & produk Anda siap meledak!</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonial-section" id="testimonials">
+<div class="container">
+<h2 class="section-title fade-up">Apa Kata <span class="highlight">Mereka?</span></h2>
+<p class="section-subtitle fade-up">Sudah banyak brand dan seller yang terbantu meningkatkan performa listing mereka dengan desain premium kami.</p>
+</div>
+<div class="testimonial-marquee fade-up">
+<div class="testimonial-slide-track">
+<!-- Set 1 -->
+<div class="testimonial-slide"><img src="assets/images/testi-1.webp" alt="Testimoni 1"></div>
+<div class="testimonial-slide"><img src="assets/images/testi-2.webp" alt="Testimoni 2"></div>
+<div class="testimonial-slide"><img src="assets/images/testi-3.webp" alt="Testimoni 3"></div>
+<div class="testimonial-slide"><img src="assets/images/testi-4.webp" alt="Testimoni 4"></div>
+<div class="testimonial-slide"><img src="assets/images/testi-6.webp" alt="Testimoni 6"></div>
+<!-- Set 2 (duplicate) -->
+<div class="testimonial-slide"><img src="assets/images/testi-1.webp" alt=""></div>
+<div class="testimonial-slide"><img src="assets/images/testi-2.webp" alt=""></div>
+<div class="testimonial-slide"><img src="assets/images/testi-3.webp" alt=""></div>
+<div class="testimonial-slide"><img src="assets/images/testi-4.webp" alt=""></div>
+<div class="testimonial-slide"><img src="assets/images/testi-6.webp" alt=""></div>
+</div>
+</div>
+</section>
+
+<!-- ===== PACKAGE ===== -->
+<section class="section package-section" id="package">
+<div class="container">
+<h2 class="section-title fade-up">Pilih paket investasi Anda</h2>
+<p class="section-subtitle fade-up">Banner produk HD 2K yang mengubah tampilan listing Anda secara total.</p>
+<div class="package-grid fade-up">
+<!-- Paket Starter -->
+<div class="price-card stagger-item">
+<h3 style="margin-bottom:4px;font-size:20px">Starter</h3>
+<span class="price-sub">1 produk</span>
+<span class="price-anchor">Rp 250.000</span>
+<span class="price-main">Rp 150.000</span>
+<span class="price-unit">Rp 150.000 / produk</span>
+<div style="height:24px;margin-bottom:24px"></div><!-- Spacer for savings badge alignment -->
+<p class="price-desc">Cocok untuk coba 1 produk dulu.</p>
+<div style="margin-top:auto">
+<a href="https://wa.me/6285169153878?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Starter%20(1%20Produk)." class="btn btn-outline" style="width:100%">Pilih paket</a>
+</div>
+</div>
+
+<!-- Paket Growth -->
+<div class="price-card stagger-item">
+<h3 style="margin-bottom:4px;font-size:20px">Growth</h3>
+<span class="price-sub">2 produk</span>
+<span class="price-anchor">Rp 500.000</span>
+<span class="price-main">Rp 250.000</span>
+<span class="price-unit">Rp 125.000 / produk</span>
+<div class="savings-badge">Hemat Rp 50.000</div>
+<p class="price-desc">2 produk selesai sekaligus, lebih efisien.</p>
+<div style="margin-top:auto">
+<a href="https://wa.me/6285169153878?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Growth%20(2%20Produk)." class="btn btn-outline" style="width:100%">Pilih paket</a>
+</div>
+</div>
+
+<!-- Paket Pro Master -->
+<div class="price-card featured stagger-item">
+<span class="best-seller-badge" style="background:var(--green-dark)">Nilai terbaik</span>
+<h3 style="margin-bottom:4px;font-size:20px">Pro Master</h3>
+<span class="price-sub">3 produk</span>
+<span class="price-anchor">Rp 750.000</span>
+<span class="price-main">Rp 280.000</span>
+<span class="price-unit">Rp 93.000 / produk — termurah</span>
+<div class="savings-badge">Hemat Rp 170.000 vs satuan</div>
+<p class="price-desc">Paling banyak dipilih oleh seller yang serius upgrade listing.</p>
+<div style="margin-top:auto">
+<a href="https://wa.me/6285169153878?text=Halo%2C%20saya%20tertarik%20dengan%20Paket%20Pro%20Master%20(3%20Produk)." class="btn btn-green" style="width:100%">Ambil paket ini</a>
+</div>
+</div>
+</div>
+
+<!-- Summary Bar -->
+<div class="summary-bar fade-up">
+<div class="summary-item">
+<strong>6–10</strong>
+<span>banner per produk</span>
+</div>
+<div class="summary-item">
+<strong>HD 2K</strong>
+<span>resolusi tajam</span>
+</div>
+<div class="summary-item">
+<strong>3x</strong>
+<span>revisi gratis</span>
+</div>
+<div class="summary-item">
+<strong>.png</strong>
+<span>siap upload</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-section" id="faq">
+<div class="container">
+<h2 class="section-title fade-up">Pertanyaan Umum <span class="highlight">(FAQ)</span></h2>
+<p class="section-subtitle fade-up">Segala hal yang perlu Anda ketahui sebelum memulai project desain Anda.</p>
+<div class="faq-grid fade-up">
+<div class="faq-item">
+<div class="faq-question">
+<span>Apakah harus punya foto profesional?</span>
+<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+</div>
+<div class="faq-answer">
+Tidak wajib. Selama foto produk Anda cukup jelas dan stabil pencahayaannya, kami bisa mengolahnya menjadi visual yang premium.
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<span>Apakah bisa dibantu buatkan copywriting?</span>
+<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+</div>
+<div class="faq-answer">
+Tentu! Anda cukup memberikan poin-poin fitur/manfaat produk, tim kami yang akan menyusun bahasa marketing yang menjual.
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<span>Bisa untuk varian produk yang banyak?</span>
+<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+</div>
+<div class="faq-answer">
+Sangat bisa. Kami menyediakan paket khusus untuk produk dengan banyak varian warna/tipe agar biayanya lebih efisien.
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<span>Bisa untuk listing Amazon internasional?</span>
+<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+</div>
+<div class="faq-answer">
+Bisa. Kami sudah berpengalaman menangani desain EBC/A+ Content untuk seller Amazon dengan standar visual internasional.
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">
+<span>Revisi berapa kali?</span>
+<svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+</div>
+<div class="faq-answer">
+Kami memberikan 3x revisi minor untuk setiap project guna memastikan hasil akhirnya benar-benar sesuai dengan ekspektasi Anda.
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" id="contact">
+<div class="container fade-up">
+<h2>Siap Bikin Produkmu <span class="highlight">Lebih Siap Jual?</span></h2>
+<p>Lupakan foto produk yang membosankan. Saatnya tampil premium dan rebut kepercayaan pembeli sekarang juga.</p>
+<a href="https://wa.me/6285169153878?text=Kirim%20link%20produk%20dan%20target%20platform%20Anda.%20Kami%20bantu%20pilih%20paket%20yang%20paling%20pas." class="btn btn-green" id="cta-final">🚀 Mulai Project Sekarang</a>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+<p>&copy; 2026 Jasa Desain PDP & EBC Premium. All rights reserved.</p>
+</footer>
+
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(q => {
+q.addEventListener('click', () => {
+const item = q.parentElement;
+const isActive = item.classList.contains('active');
+document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+if (!isActive) item.classList.add('active');
+});
+});
+
+// Fade Up Animation on Scroll with Stagger
+const observerOptions = { threshold: 0.1 };
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+// Handle children stagger
+const staggered = entry.target.querySelectorAll('.stagger-item');
+staggered.forEach((el, index) => {
+el.style.transitionDelay = `${index * 0.15}s`;
+el.classList.add('visible');
+});
+}
+});
+}, observerOptions);
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
