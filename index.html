@@ -42,6 +42,23 @@ img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit}
 .container{max-width:1140px;margin:0 auto;padding:0 24px}
 
+/* ===== NAVBAR ===== */
+.navbar{
+position:absolute;
+top:0;left:0;right:0;
+padding:30px 0;
+z-index:100;
+}
+.navbar .container{
+display:flex;
+align-items:center;
+justify-content:flex-start;
+}
+.navbar-logo img{
+height:32px;
+width:auto;
+}
+
 /* ===== HERO ===== */
 .hero{
 padding:100px 0 80px;
@@ -772,6 +789,15 @@ transform:translateY(0);
 </style>
 </head>
 <body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+<div class="container">
+<a href="/" class="navbar-logo">
+<img src="assets/images/logo-roketmarket.png" alt="Roketmarket Logo" width="160" height="32">
+</a>
+</div>
+</nav>
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="hero">
